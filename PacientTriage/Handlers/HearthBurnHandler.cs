@@ -5,11 +5,11 @@ namespace PacientTriage.Handlers
 {
     public class HearthBurnHandler : ISymptomHandler
     {
-        private readonly ISymptomHandler _nextSymptom;
+        private readonly ISymptomHandler _nextHandler;
 
-        public HearthBurnHandler(ISymptomHandler nextSymptom)
+        public HearthBurnHandler(ISymptomHandler nextHandler)
         {
-            _nextSymptom = nextSymptom;
+            _nextHandler = nextHandler;
         }
 
         public void HandleSymptom(Pacient pacient)
@@ -21,7 +21,7 @@ namespace PacientTriage.Handlers
             }
             else
             {
-                this._nextSymptom.HandleSymptom(pacient);
+                this._nextHandler.HandleSymptom(pacient);
             }
         }
     }
