@@ -15,7 +15,7 @@ namespace PacientTriage.Handlers
         public void HandleSymptom(Pacient pacient)
         {
             if (pacient.Symptoms.Contains(Symptoms.ChestPain) &&
-                pacient.Symptoms.Contains(Symptoms.NumbArm))
+                pacient.Symptoms.Contains(Symptoms.NumbnessInArm))
             {
                 pacient.DefineBracelet(Bracelet.Red);
             }

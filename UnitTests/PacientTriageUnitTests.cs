@@ -51,7 +51,7 @@ namespace UnitTests
             var symptoms = new List<string>
             {
                 Symptoms.ChestPain,
-                Symptoms.NumbArm
+                Symptoms.NumbnessInArm
             };
 
             this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);

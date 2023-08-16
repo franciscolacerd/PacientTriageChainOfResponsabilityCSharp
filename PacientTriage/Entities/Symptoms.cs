@@ -4,6 +4,6 @@
     {
         public const string ChestPain = "Chest pain";
 
-        public const string NumbArm = "Numb arm";
+        public const string NumbnessInArm = "Numbness in arm";
     }
 }
