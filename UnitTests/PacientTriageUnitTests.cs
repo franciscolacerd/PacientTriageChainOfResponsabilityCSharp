@@ -35,7 +35,7 @@ namespace UnitTests
 
             this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
-            var nurse = new Nurse(new SymptomChainHandler());
+            var nurse = new Nurse(new EvaluationChainHandler());
 
             // Act
             nurse.EvaluateSymptoms(this._pacient);
@@ -56,7 +56,7 @@ namespace UnitTests
 
             this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
-            var nurse = new Nurse(new SymptomChainHandler());
+            var nurse = new Nurse(new EvaluationChainHandler());
 
             // Act
             nurse.EvaluateSymptoms(this._pacient);

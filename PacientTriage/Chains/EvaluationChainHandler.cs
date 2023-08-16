@@ -4,11 +4,11 @@ using PacientTriage.Handlers;
 
 namespace PacientTriage.Chains
 {
-    public class SymptomChainHandler
+    public class EvaluationChainHandler
     {
         private readonly ISymptomHandler _chain;
 
-        public SymptomChainHandler()
+        public EvaluationChainHandler()
         {
             _chain = new HearthBurnHandler(new HearthAttackHandler(new DefaultHandler()));
         }

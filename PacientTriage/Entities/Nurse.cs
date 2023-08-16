@@ -4,9 +4,9 @@ namespace PacientTriage.Entities
 {
     public class Nurse
     {
-        private readonly SymptomChainHandler _chain;
+        private readonly EvaluationChainHandler _chain;
 
-        public Nurse(SymptomChainHandler chain)
+        public Nurse(EvaluationChainHandler chain)
         {
             this._chain = chain;
         }

@@ -36,7 +36,7 @@
             this.Temperature = temperature;
         }
 
-        public void MustRequiresHospitalization(bool requiresHospitalization)
+        public void MustRequireHospitalization(bool requiresHospitalization)
         {
             this.RequiresHospitalization = requiresHospitalization;
         }
