@@ -25,7 +25,7 @@ namespace UnitTests
         }
 
         [Test]
-        public void Should_HandleHeartAttack_DefineBraceletYellow()
+        public void Should_HandleHeartBurn_DefineBraceletYellow()
         {
             // Arrange
             var symptoms = new List<string>
