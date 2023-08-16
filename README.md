@@ -207,7 +207,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
          // Act
          nurse.EvaluateSymptoms(this._pacient);
 
-         //Assert
+         // Assert
          this._pacient.Bracelet.Should().Be(Bracelet.Yellow);
      }
 
@@ -228,7 +228,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
          // Act
          nurse.EvaluateSymptoms(this._pacient);
 
-         //Assert
+         // Assert
          this._pacient.Bracelet.Should().Be(Bracelet.Red);
      }
  }
