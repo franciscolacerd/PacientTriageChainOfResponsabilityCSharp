@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
 ## C# Implementation
 
-### 1. Declare Hospital Triage entities 
+### 1. Declare Hospital entities 
 
 #### Pacient
 ```c#
