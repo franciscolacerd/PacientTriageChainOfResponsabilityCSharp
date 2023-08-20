@@ -33,11 +33,11 @@ namespace UnitTests
                 Symptoms.ChestPain
             };
 
+            // Act
             this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
             var nurse = new Nurse(new EvaluationChainHandler());
 
-            // Act
             nurse.EvaluateSymptoms(this._pacient);
 
             //Assert
@@ -54,11 +54,11 @@ namespace UnitTests
                 Symptoms.NumbnessInArm
             };
 
+            // Act
             this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
             var nurse = new Nurse(new EvaluationChainHandler());
 
-            // Act
             nurse.EvaluateSymptoms(this._pacient);
 
             //Assert
