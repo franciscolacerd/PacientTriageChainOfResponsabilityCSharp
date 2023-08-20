@@ -32,6 +32,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
        public BloodPressure BloodPressure { get; private set; }
   
        public double Temperature { get; private set; }
+
        public bool RequiresHospitalization { get; private set; }
   
        public Bracelet Bracelet { get; private set; }
