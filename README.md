@@ -15,7 +15,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
 
 ## C# Implementation
 
-### 1. Declare Hospital entities 
+### 1. Declare entities 
 
 #### Pacient
 ```c#
@@ -32,6 +32,7 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
        public BloodPressure BloodPressure { get; private set; }
   
        public double Temperature { get; private set; }
+
        public bool RequiresHospitalization { get; private set; }
   
        public Bracelet Bracelet { get; private set; }
@@ -200,11 +201,11 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
              Symptoms.ChestPain
          };
 
+         // Act
          this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
          var nurse = new Nurse(new EvaluationChainHandler());
 
-         // Act
          nurse.EvaluateSymptoms(this._pacient);
 
          // Assert
@@ -221,11 +222,11 @@ https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
              Symptoms.NumbnessInArm
          };
 
+         // Act
          this._pacient.AddSymptoms(symptoms, this._bloodPressure, this._temperature);
 
          var nurse = new Nurse(new EvaluationChainHandler());
 
-         // Act
          nurse.EvaluateSymptoms(this._pacient);
 
          // Assert
